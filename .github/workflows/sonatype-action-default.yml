@@ -25,6 +25,8 @@ jobs:
         password: ${{ secrets.SONATYPE_IQ_PASSWORD }}
         application-id: sonatype-field-workshop-default
         scan-targets: target/struts2-rest-showcase.war
+        sarif-file: 'result.sarif'
+        upload-sarif-file: 'true'
         debug: true
         # Print out the results
     - name: Log evaluate action output
